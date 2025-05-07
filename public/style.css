@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+h1,h2,h3 {
+    text-align: center;
+    font-size: 200%;
+}
+table {
+    font-size: 30px;
+}
+button {
+    font-size: 100%;
+    background-color: transparent;
+    border: solid 1px;
+    border-color: inherit;
+    border-radius: 5px;
+    margin-left: 2%;
+    color: inherit;
+}
+button:hover {
+    background-color: lightgrey;
+}
+section {
+    float: left;
+    width: 45%;
+    margin-left: 1%;
+    margin-right: 1%;
+    border: solid 2px;
+    border-radius: 10px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+#game_section_container {
+    width: 70%;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 5%;
+    border: none;
+}
+#section_factory {
+    color: rgb(100, 100, 100);
+    border-color: rgb(100, 100, 100);
+    font-size: 120%;
+}
+#section_bar {
+    color: rgb(195, 30, 228);
+    border-color: rgb(195, 30, 228);
+    font-size: 120%;
+}
+#section_lab {
+    color: rgb(0, 47, 255);
+    border-color: rgb(0, 47, 255);
+    font-size: 120%;
+}
+#section_marketing {
+    color: rgb(194, 132, 0);
+    border-color: rgb(194, 132, 0);
+    font-size: 120%;
+}
+.side-section {
+    float: right;
+    font-size: 120%;
+    width: 22%;
+    padding-left: 2%;
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    margin-bottom: 1%;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext {
+    font-size: 80%;
+    visibility: hidden;
+    width: 300px;
+    background-color: #000000;
+    color: #fff;
+    text-align: left;
+    border-radius: 3px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+input[type=checkbox],input[type=radio] {
+    transform: scale(1.25);
+}
